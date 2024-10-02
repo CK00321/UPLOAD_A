@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "C_P_TEST.sln"
+    "dotnet.defaultSolution": "UPLOAD_A.sln"
 }
