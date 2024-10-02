@@ -1,0 +1,241 @@
+﻿title: Start
+position: -238,-86
+--- 
+Lost in the deep end of the Whispering Woods, 
+A forest land full of Mysterious Magical creatures and bygone secrets.
+As twillight descends, A soft voice hits the ear drums by calling your Name.  
+<<jump Choice_1>>
+===
+
+title: Choice_1
+position: 222,42
+---
+A_Voice: Hello Friend! you should've been Lost, what is your Name. Don't be afraid of me,:'NO! HARM TO YOU'
+    ->Player: I'm Confused, Where I'm I?
+        <<jump Choice_3>>
+    ->Player: Who are you? I can only hear you, but your omnipresence is hazy.    
+        <<jump Choice_2>>
+===
+title: Choice_2
+position: -354,254
+---
+A_Voice: Don't worry, My name is Luna.
+    <<wait 2>>
+    <<jump Narration_1>>
+===
+title: Choice_3
+position: 17,279
+---
+  
+Luna: your no more in trance state your feeling it. 
+<<wait 1>>
+Luna: Sense the fear, there is only one way you can overcome it either to face it or run every movement of your life until the body exempts souls.
+<<jump Choice_1>>
+===
+
+title: Narration_1
+position: -1084,-17
+---
+As you step into the dimly lit forest, the trees seem to close in around you. The air is thick with mystery. You follow the sound of the voice, which grows clearer with each step.
+<<wait 1>> 
+<<jump Choice_4_And_Ending_1>>
+===
+
+title: Choice_4_And_Ending_1
+position: -953,-330
+---
+->Player: Explore the Surrondings.
+    <<jump Player_Go_Back_or_Exit>>
+->Player: Follow the vocie.
+    <<jump Second_Stage>>
+===
+
+//IF --> EXPLORE THE SURRONDINGS//
+
+title: Player_Go_Back_or_Exit
+position: -638,-522
+---
+you suddenly found a way back to your place, are you sure you want to take this way.
+ ->Player: Go back investigate the unknown voice.
+    <<jump Choice_4_And_Ending_1>>
+ ->Player: I will better take my path from here.
+    <<jump Ending_1>>
+===
+
+title: Ending_1
+position: -365,-309
+---
+You decide the woods are too dangerous. As you walk away, the voice fades, and you feel a strange emptiness. The woods whisper behind you, and you wonder what adventures you may have missed.
+<<wait 2>>
+You live a mundane life, forever longing for the mystery of the Whispering Woods.
+<<stop>>
+<<jump Narration_Endings>>
+===
+
+//IF FOLLOW THE VOICE//
+
+//Ending 2//
+
+title: Second_Stage
+position: -1545,48
+---
+You move deeper into the woods, drawn by the enchanting call. Suddenly, you find yourself in a clearing where a shimmering figure appears
+
+Luna: Thank you for coming, I need your help. The woods are in danger.”
+ 
+ ->Player: how can i help you.
+  <<wait 2>>
+
+Luna: Thank you! The Heart of the Woods is fading. We must retrieve the Crystal of Life from the Cave of Shadows. Together, we can set off towards the cave.
+<<jump Narration_2>>
+===
+
+title: Narration_2
+position: -685,375
+---
+As you approach, the cave looms ominously before you
+<<jump Second_Stage_2>>
+===
+title: Second_Stage_2
+position: -1011,790
+---
+Luna: are you prepared my little Friend or you still want some rest before we enter the Cave.
+ ->Player: I will wait outside for few minutes.
+    <<wait 4>>
+    
+->Player: Let's enter the cave, but anything to mention before we enter the Cave.
+    Luna: nothing.
+    <<jump Stage_Enter_The_Cave>>
+    
+Player:.......Hmmff
+    <<jump Second_Stage_2>>
+===
+
+title: Stage_Enter_The_Cave
+position: -318,836
+---
+Inside, the air is cool and damp. You see two paths one lit by a flickering blue glow, the other shrouded in darkness.
+
+Player: there are two enterance!, which one should i choose?
+
+Luna: i wished i can help you, but this task is on you.
+
+    ->Player: cave with blue path
+        <<jump Blue_Cave>>
+    ->Player: cave with dark path
+        <<jump Dark_Cave>>
+===
+
+title: Narration_3
+position: 875,32
+---
+You find the Crystal of Life glowing on a pedestal. As you reach for it, a guardian spirit appears.
+===
+title: Blue_Cave
+position: -769,1103
+---
+Luna: To take the crystal, you must answer the guardian riddle
+<<jump Choice_5_And_Ending_2>>
+===
+
+title:Choice_5_And_Ending_2
+position: -1377,1404
+---
+Player: I have to be carefull on both anyways.
+<<wait  1>>
+    ->Player: Try to Take the Crystal Anyway.
+        <<jump Second_Stage_Try_To_Take_The_Crystal_Anyway>>
+    ->Player: Answer the Riddle.
+        <<jump Second_Stage_Answer_The_Riddle_Finish>>
+===
+
+title: Second_Stage_Answer_The_Riddle_Finish
+position: -1404,1767
+---
+The guardian: your answer to the riddle is correct I grant you the crystal my son.
+
+Luna: You did it child. you saved the magical forest forever.
+<<jump Narration_4_Ending_2>>
+===
+
+title: Narration_4_Ending_2
+position: -973,1743
+---
+The guardian nods and grants you the crystal. You return to Liora, and together you restore the Heart of the Woods. The forest bursts into vibrant life, and Liora rewards you with a wish.
+<<wait 2>>
+You wish for adventure and become a protector of the woods, living alongside magical beings.
+<<jump Narration_Endings>>
+<<stop>>
+===
+title: Second_Stage_Try_To_Take_The_Crystal_Anyway
+position: -574,1403
+---
+The guardian: What have you done, you pathetic creature.
+<<jump Narration_5_Ending_2>>
+===
+title: Narration_5_Ending_2
+position: -1439,985
+---
+The guardian becomes enraged. A battle ensues, and you barely escape with Liora. However, the Heart of the Woods remains in peril.
+<<wait 2>>
+You leave the woods, but the imbalance haunts you. The forest withers, and you carry the weight of your choices.
+<<jump Narration_Endings>>
+<<stop>>
+===
+
+
+//IF DARK CAVE //
+//ENDING 3  //
+title: Dark_Cave
+position: -151,1540
+---
+Luna: it's really dark here, let me glow the aura fire for you.
+<<jump Narration_6>>
+===
+
+title: Narration_6
+position: 227,1514
+---
+The darkness swallows you, revealing a hidden chamber filled with shadows. A dark sorcerer awaits, eyeing you with malicious intent.
+<<jump Choice_6>>
+===
+
+title:Choice_6
+poistion: -606, 940
+position: 712,517
+---
+->Player: Confront the Sorcerer.
+    <<jump Third_Stage_Ending_3_Confront_The_Sorcerer>>
+->Player: Try to Sneak Past Him!
+    <<jump Third_Stage_Ending_3_Try_to_Sneak_Past_Him>>
+===
+
+
+title: Third_Stage_Ending_3_Confront_The_Sorcerer
+poistion:-700, 1000
+position: -488,530
+---
+A fierce battle ensues. With determination, you defeat him, but at a cost. The cave begins to collapse.
+<<wait 2>>
+You escape with Liora and the Crystal, but the cave’s destruction signals a long battle ahead to heal the woods.
+<<jump Narration_Endings>>
+<<stop>>
+===
+
+title: Third_Stage_Ending_3_Try_to_Sneak_Past_Him
+position: -1490,413
+---
+You manage to slip by unnoticed, finding the Crystal of Life unguarded. You grab it and rush back to Liora.
+<<wait 1>>
+You restore the Heart of the Woods, becoming a legend, but you always wonder about the sorcerer’s fate lurking in the shadows.
+<<jump Narration_Endings>>
+<<stop>>
+
+===
+
+title: Narration_Endings
+position: -1175,480
+---
+Your choices shaped the fate of the Whispering Woods and your own destiny. Will you return to uncover more secrets? The adventure awaits…
+<<stop>>
+===
